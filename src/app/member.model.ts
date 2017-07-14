@@ -3,6 +3,5 @@ export class Member {
                 public symbol: string,
                 public favorite: string,
                 public owned: number,
-                public hugs: number,
-                public id: number) {}
+                public hugs: number) {}
 }
