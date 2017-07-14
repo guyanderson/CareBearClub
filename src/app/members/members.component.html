@@ -1,3 +1,5 @@
-<p>
-  members works!
-</p>
+<h2>Members Roster</h2>
+
+<div *ngFor="let member of members">
+    <h3><em>Name: {{member.name}}</em> Belly Symbol: {{member.symbol}}</h3>
+</div>
