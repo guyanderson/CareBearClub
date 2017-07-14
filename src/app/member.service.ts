@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Member } from './member.model';
 import { MEMBERS } from './temp-members';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class MemberService {
+   members: FirebaseListObservable<any[]>;
 
-   constructor() { }
+   constructor(private database: AngularFireDatabase) {
+      this.members = database.list('members');
+   }
 
    getMembers() {
-      return MEMBERS;
+      return this.members;
    }
 
    getMemberById(memberId: number){
