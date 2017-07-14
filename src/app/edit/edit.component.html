@@ -18,5 +18,8 @@
 
 <label>New number of daily hugs:</label>
 <input [(ngModel)]="selectedMember.hugs">
+<br>
 
 <button (click)="beginUpdatingMember(selectedMember)">Update</button>
+
+<button (click)="beginDeletingMember(selectedMember)">Delete</button>
