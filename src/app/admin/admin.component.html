@@ -10,31 +10,40 @@
             <input #newName>
          </div>
          <br>
+
          <div>
             <label>Member Belly Symbol:</label>
             <br>
             <input #newSymbol>
          </div>
          <br>
+
          <div>
             <label>Member's favorite Care Bear:</label>
             <br>
             <input #newFavorite>
          </div>
          <br>
+
          <div>
             <label>How many Care Bear dolls do they own:</label>
             <br>
             <input #newOwned>
          </div>
          <br>
+
          <div>
             <label>How many hugs do they give out to stranger on an average day:</label>
             <br>
             <input #newHugs>
          </div>
          <br>
+
          <button (click)="submitForm(newName.value, newSymbol.value, newFavorite.value, newOwned.value, newHugs.value); newName.value=''; newSymbol.value=''; newFavorite.value=''; newOwned.value=''; newHugs.value=''">Add</button>
       </div>
    </div>
+</div>
+
+<div>
+  <app-members></app-members>
 </div>

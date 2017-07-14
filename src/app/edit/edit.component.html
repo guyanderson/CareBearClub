@@ -1,0 +1,22 @@
+<h4>Edit Member</h4>
+
+<label>New Member Name:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+
+<label>New Belly Symbol:</label>
+<input [(ngModel)]="selectedMember.symbol">
+<br>
+
+<label>New Favorite Care Bear:</label>
+<input [(ngModel)]="selectedMember.favorite">
+<br>
+
+<label>New number of dolls owned:</label>
+<input [(ngModel)]="selectedMember.owned">
+<br>
+
+<label>New number of daily hugs:</label>
+<input [(ngModel)]="selectedMember.hugs">
+
+<button (click)="beginUpdatingMember(selectedMember)">Update</button>
