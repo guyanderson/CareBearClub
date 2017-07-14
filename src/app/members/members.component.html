@@ -1,5 +1,7 @@
 <h2>Members Roster</h2>
 
-<div *ngFor="let member of members">
-    <h3><em>Name: {{member.name}}</em> Belly Symbol: {{member.symbol}}</h3>
+<div *ngFor="let member of members" (click)="goToDetailPage(member)" class="panel panel-default">
+   <div class="panel-body">
+      <h3><em>Name: {{member.name}}</em></h3>
+   </div>
 </div>
