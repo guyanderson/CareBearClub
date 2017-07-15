@@ -1,12 +1,12 @@
 <h2>Members Roster</h2>
 
-<div *ngFor="let member of members | async" class="panel panel-default">
-   <div class="panel-body">
-      <h3 (click)="goToDetailPage(member)"><em>Name: {{member.name}}</em></h3>
-      <div *ngIf="currentRoute === '/admin'">
-         {{member.description}}
-         <hr>
-         <app-edit [selectedMember]="member"></app-edit>
+   <div *ngFor="let member of members | async" class="panel panel-default">
+      <div class="panel-body">
+         <h3 (click)="goToDetailPage(member)"><em>Name: {{member.name}}</em></h3>
+         <div *ngIf="currentRoute === '/admin'">
+            {{member.description}}
+            <hr>
+            <app-edit [selectedMember]="member"></app-edit>
+         </div>
       </div>
    </div>
-</div>
